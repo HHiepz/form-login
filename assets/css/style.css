@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    background-color: #2f3542;
+    color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.container
+{
+    position: relative;
+    border: 5px solid #e67e22;
+    border-radius: 30px;
+    padding: 30px;
+    background: #fff;
+    color: #333;
+}
+.title
+{
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.input-box > input
+{
+    padding: 10px;
+    margin-bottom: 15px;
+    min-width: 300px;
+    color: #e67e22;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.submit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit > input
+{
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    min-width: 300px;
+    background: #e67e22;
+    color: #eee;
+    border-radius: 5px;
+    border: 1px solid;
+    font-weight: 600;
+}
+.quen-mk
+{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    transition: 0.5s color;
+}
+.quen-mk:hover
+{
+    color: #e74c3c;
+}
+
+#author
+{
+    position: absolute;
+    color: #e67e22;
+    z-index: 1;
+    top: -15%;
+    left: 35%;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+    .submit > input,
+    .input-box > input
+    {
+        min-width: 240px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .submit > input,
+    .input-box > input
+    {
+        min-width: 200px;
+    }
+}
